@@ -1,0 +1,151 @@
+* {
+    padding: 0;
+    box-sizing: border-box;
+}
+  /* Estilos base para el body */
+body {
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+}
+
+.vacio{
+    font-size: 1px;
+}
+
+h3 {
+    text-align: center;
+    font-size: 30px;
+}
+
+.titulo {
+    color: blue;
+    text-transform: capitalize;
+}
+
+.container-listas {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+
+.lista{
+    width: 500px;
+    min-height: 150px;
+    height: auto;
+    background-color: black;
+    color: white;
+    border-radius: 16px;
+    margin: auto;
+    margin-top: 20px;
+}
+
+.lista2 {
+    padding: 20px;
+    display: none;
+}
+
+.lista2.show {
+    display: flex;
+}
+
+#content-list2 {
+    text-align: center;
+}
+
+.tema-btn{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 30px 0px;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.tema-btn button {
+    padding: 8px 13px;
+    font-size: 15px;
+    border-radius: 7px;
+}
+
+.tema-btn button:hover,
+.tema-btn button:active {
+    border: 1px solid #48f;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); 
+}
+
+#extension {
+    display: flex;
+    padding: 40px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transform: translateY(-100%);
+    opacity: 0;
+    transition: transform 0.5s ease, opacity 0.5s ease; 
+    gap: 12px;
+}
+
+#extension.show {
+    transform: translateY(0); 
+    opacity: 1; 
+}
+
+#content-box {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.Botones-scripts{
+    display: none;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    background-color: #a89797;
+    padding: 20px 0px;
+    padding-bottom: 60px;
+    border-radius: 26px;
+}
+
+.container-inputs{
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: center;
+    gap: 20px;
+    background-color: #48f;
+    padding: 40px;
+    border-radius: 16px;
+    font-size: 20px;
+    font-weight: 700;
+    text-align: left;
+}
+
+label {
+    width: 100%;
+    text-align: end;
+    justify-content: end;
+    align-items: end;
+}
+
+.Btn-submit{
+    width: 100%;
+    padding: 6px 14px;
+}
+
+.register {
+    display: none;
+}
+
+.To-Do{
+    
+}

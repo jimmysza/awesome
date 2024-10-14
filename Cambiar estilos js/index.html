@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cambiando css</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="Botones-scripts">
+        <h3 id="h3">lista de objetos</h3>
+        <div class="container-listas">
+            <div class="lista">
+                <div id="extension">
+                    <div id="content-box">
+                        <label for="name">Nombre</label>
+                        <input type="text" id="name">
+                    </div>
+                    <div id="content-box">
+                        <label for="lastname">Apellido</label>
+                        <input type="text" id="lastname">
+                    </div>
+                    <button style="padding: 7px 10px; margin-top: 4px;">Enviar</button>
+                    <div id="content-box">
+                        <p style="font-size: 10px;">Jaime perez</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="lista lista2">
+                <div id="content-list2">
+                    <p>Jaime perez</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="tema-btn">
+            <span onclick="mostrarlista()">chavos</span>
+            <button onclick="mostrarlista()">Mostrar</button>
+            <button onclick="ocultarlista()">Ocultar </button>
+            <button onclick="h3masgrande()">Aumentar Tamaño</button>
+            <button onclick="alternarClase()">Alternar Azul y Negro</button>
+            <button onclick="mostraLista2()">nuevo Box</button>
+            <button onclick="desapareceLista2()">Borrar Box</button>
+            <button onclick="reiniciarValores()">restart...</button>
+        </div>
+    </div>
+
+    <form action="" class="register">
+        <H1>Registrarse</H1>
+        <div class="container-inputs">
+            <label for="usuario">Usuario
+                <input type="text" id="usuario" >
+            </label>
+            <label for="password">Contraseña
+                <input type="password" id="password" >
+            </label>
+            <div class="submit-container">
+                <button type="submit" class="Btn-submit" onclick="samethings()">Enviar</button>
+            </div>
+            <p id="respuesta"></p>
+        </div>
+    </form>
+
+    <div class="To-Do">
+        
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

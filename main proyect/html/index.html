@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JAVASCRIPT</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <meta>
+</head>
+
+<body>
+
+    
+
+    <div class="fixed">
+        <p>Entra a mi Whatsapp</p>
+    </div>
+
+    <div class="div1">
+        <p>Ingresa un valor del 1 al 3 </p>
+
+        <!--id manipular en js-->
+        <input type="text" id="respuesta"></input>
+        <div class="button-cont">
+            <!--al presionar se accede a la funcion-->
+            <button onclick="checaValor();">Cambiar</button>
+        </div>
+        <p id="resultado"></p>
+    </div>
+
+    <h1 id="main">Benyjr</h1>
+
+    <div class="rect">
+        <p id="parrafo1">
+            MOSTRAR CANCIONES DE BENY
+        </p>
+    </div>
+    <div class="tema-btn">
+        <button onclick="mostrarTemas()">Mostrar</button>
+        <button onclick="ocultarTemas()">Ocultar </button>
+    </div>
+
+
+    <h3>lista de objetos</h3>
+    <div class="lista">
+        <div id="extension">
+            <div id="content-box">
+                <p>Jaime perez</p>
+            </div>
+            <div id="content-box">
+                <p>Jaime perez</p>
+            </div>
+            <div id="content-box">
+                <p>Jaime perez</p>
+            </div>
+            <div id="content-box">
+                <p>Jaime perez</p>
+            </div>
+        </div>
+    </div>
+    <div class="tema-btn">
+        <button onclick="mostrarlista()">Mostrar</button>
+        <button onclick="ocultarlista()">Ocultar </button>
+    </div>
+
+
+    <div class="imagenes">
+
+        <div class="container-img">
+            <img id="imagen" src="../assets/img/thorfin.jpg" alt="si no carga es porque tienes un pese de la chota">
+        </div>
+        
+        <div class="btn-img">
+            <button onclick="cambiarimagen()">Cambiar</button>
+        </div>
+    </div>
+
+        <h2>Presave nuevo albumn</h2>
+        <form action="/ManejodeFormulario" method="post">
+            <label for="mail">Email</label>
+            <input type="email" placeholder="ejemplo@gmail.com" id="mail" name="emails">
+            <br><br>
+            <label for="">Sexo:</label>
+            <label for="hombre">Hombre</label>
+            <input type="radio" id="hombre">
+            <label for="mujer">Mujer</label>
+            <input type="radio" id="mujer">
+            <br><br>
+
+            <label for="pais">País:</label>
+            <select name="pais" id="pais">
+                <option>Estados Unidos</option>
+                <option>Canadá</option>
+                <option selected>México</option>
+                <option>Otro</option>
+            </select> <br>
+
+            <label for="terminos">Aceptas los terminso</label>
+            <input type="checkbox" name="terminos" id="terminos" value="aceptar">
+            <br>
+            <input type="submit" value="Enviar!">
+
+
+            <a href="https://www.google.com.mx">
+                <p style="font-size: 20px;">¡Este enlace te lleva a Google!</p>
+            </a>
+        </form>
+
+        <iframe src="https://www.youtube.com/embed/yTr_3Q50orM" width="500" height="500" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe>
+
+
+
+        <script src="../index.js"></script>
+</body>
+
+</html>
