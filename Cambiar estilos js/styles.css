@@ -147,5 +147,58 @@ label {
 }
 
 .To-Do{
-    
+    background-color: #832525;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 16px;
+    width: 85%;
+    margin: auto;
+}
+
+#do-label{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 25px;
+    text-transform: uppercase;
+    font-weight: 900;
+}
+#do-label p {
+    font-size: 30px;
+    text-shadow: 1px 0px 30px #f4f4f4;
+}
+
+#do{
+    padding: 5px;
+    width: 50%;
+}
+
+#btn-do {
+    padding: 7px 14px;
+}
+
+#list-do{
+    height: 400px;
+    width: 80%;
+    border-radius: 8px;
+    margin: 4px;
+    margin-top: 12px;
+    background-color: #bbbaba;
+    padding: 15px 20px;
+    padding-top: 20px;
+}
+
+#container-do {
+    margin-bottom: 15px;
+    gap: 5px;
+    border: 1px solid rgb(154, 154, 154);
+    border-radius: 16px;
+    width: 100%;
+    padding-left: 10px;
+}
+
+#checkbox-list{
+    margin: 0;
 }

@@ -61,3 +61,55 @@ function samethings() {
         element.innerHTML = "Rectifiqe a ver ingresado bien los datos";
     }
 }
+
+
+
+
+function agregarto_do() {
+    var input = document.getElementById("do"); // Obtener el input
+    var text = input.value; // Obtener el valor del input
+    var list = document.getElementById("list-do"); // Obtener el contenedor para los checkboxes
+
+    // Crear un contenedor para el checkbox y el párrafo
+    var contenedor = document.createElement('div');
+    contenedor.style.display = "flex";
+    contenedor.id = "container-do";
+    contenedor.for = "checkbox-list";
+    
+    // Crear el checkbox
+    var checkbox = document.createElement('input');
+    checkbox.type = 'checkbox';
+    checkbox.id = "checkbox-list";
+
+    // Crear el párrafo con el texto
+    var parrafo = document.createElement('p');
+    parrafo.textContent = text; // Añadir el texto al <label>
+
+    // Añadir el checkbox y el párrafo al contenedor
+    contenedor.appendChild(checkbox);
+    contenedor.appendChild(parrafo);
+
+    // Añadir el contenedor al listado
+    list.appendChild(contenedor);
+
+    // Agregar un evento al checkbox para verificar su estado
+    checkbox.addEventListener('change', function() {
+        if (checkbox.checked) {
+            contenedor.style.display = "none"; // Ocultar el contenedor cuando el checkbox está marcado
+        } else {
+            contenedor.style.display = "flex"; // Mostrar el contenedor si el checkbox no está marcado
+        }
+    });
+
+    // Limpiar el valor del input
+    input.value = ""; // Vaciar el campo de texto
+}
+
+function enfocarInput() {
+    var input = document.getElementById("do");
+    input.focus(); // Enfocar el input
+}
+
+// Agregar el evento de clic al div
+var miDiv = document.getElementById("container-do");
+miDiv.addEventListener("click", enfocarInput);
